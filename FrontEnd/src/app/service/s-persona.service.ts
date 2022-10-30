@@ -9,8 +9,8 @@ import { Persona } from '../model/Persona';
 })
 export class SPersonaService {
   
-  //URL = environment.URL + 'persona/';
-  URL : 'http://localhost:8080/persona/'
+  URL = environment.URL + 'persona/';
+  //URL : 'http://localhost:8080/persona/'
 
   constructor(private httpClient: HttpClient) { }
 
