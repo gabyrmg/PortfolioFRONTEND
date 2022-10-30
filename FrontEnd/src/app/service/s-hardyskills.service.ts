@@ -8,7 +8,8 @@ import { Hardyskill } from '../model/hardyskill';
   providedIn: 'root'
 })
 export class SHardyskillsService {
-  URL = environment.URL + 'skill/' ;
+  //URL = environment.URL + 'skill/' ;
+  URL : 'http://localhost:8080/skill/'
 
   constructor(private httpClient: HttpClient) { }
 
