@@ -1,0 +1,47 @@
+.row {
+    padding: 20px;
+}
+#proyectos {
+    background-color:#e22b86;
+    border-radius: inherit;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: inherit;
+  
+}
+.img_proyectos {
+    height: 55px;
+    vertical-align: middle;
+}
+
+
+div{
+    
+    color: white;
+}
+
+h1 {
+    display: inline;
+    padding: inherit;
+    margin:0px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+        
+}
+
+h2, h3 {
+    display: inline;
+}
+
+
+.table{
+    color: white;
+    border-color: #e22b86;
+
+}
+#btn_agregar{
+    border-width: 3px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 15px;   
+}

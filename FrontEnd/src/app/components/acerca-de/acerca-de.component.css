@@ -1,0 +1,93 @@
+.row {
+    padding: 10px;
+    
+}
+
+div {
+    text-align: center;
+    color:white;
+}
+
+/*h2 {
+    background-color:#e22b86;
+    border-radius: inherit;
+    padding: inherit;
+    margin:0px;
+    text-shadow:1px 5px 25px #e22b86;
+}*/
+
+h2 {
+    text-shadow:1px 5px 25px #e22b86;
+}
+
+
+.btn{
+    background-color: #e22b86;
+    font-size: 20px;
+    font-weight: bold;
+    border-width: 3px;
+    vertical-align: middle;
+    margin-top: 5px;
+    /*width: 300px;*/
+}
+
+#nombre-titulo{
+    margin-top: 10px;
+}
+
+#nombre {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow:1px 5px 25px #e22b86;
+    
+}
+
+#titulo {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:1px 5px 25px #e22b86;
+
+   /* background:linear-gradient ( #3a0c28 ,#2bd6e2)*/
+
+}
+
+
+#acerca-de{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*========================= MEDIA QUERY PANTALLA GRANDE ===================================*/
+
+@media (min-width:757px) {
+    #foto-perfil{
+       position:absolute;
+        width: 16%;
+        /*border-radius: 100%;*/
+       /* ;*/
+       top: 300px;
+       left:5%
+    }
+    
+}
+
+/*========================= MEDIA QUERY PANTALLA CHICA ===================================*/
+@media (max-width:756px) {
+    #foto-perfil{
+       position:absolute;
+        width: 15%;
+       /* border-radius: 100%;*/    
+       /* left:33%;*/
+     
+     
+      top: 646px;
+        left: 25px;
+    }
+}
+/*=======================================================================================*/
+#nombre-titulo p {
+    font-weight: bold;
+    margin-top: 10px;
+}

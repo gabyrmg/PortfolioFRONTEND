@@ -1,0 +1,42 @@
+<div class="row mx-auto bg-dark p-2 border border-2 rounded  border-info   ">
+    <div id="educacion">
+        <h1>Educación</h1>
+        <img src="../../../assets/educacion.png" class="img_educacion" alt="logo educacion">
+        <button type="button" id="btn_agregar" class="btn btn-outline-light" routerLink="/nuevaedu" *ngIf="isLogged"
+            style="float:right">Agregar educación</button>
+    </div>
+
+
+    <div class="col lg 1"></div>
+    <!--hay que arreglar par pantallla pequeña-->
+    <div class="col-lg-11"></div>
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Educacion of edu">
+                <td>
+                    <h4>{{Educacion.nombreEd}}</h4>
+                </td>
+                <td>{{Educacion.descripcionEd}}</td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light rounded-circle mx-1" routerLink="/editedu/{{Educacion.id}}">
+                        <abbr title="Click para EDITAR EDUCACION" style="font-size: 1rem bold"> <i
+                                class="bi bi-pencil-fill" style="font-size: 1rem"></i>
+                        </abbr>
+                    </button>
+                </td>
+
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light rounded-circle" (click)="delete(Educacion.id)">
+                        <abbr title="Click para ELIMINAR EDUCACION"> <i class="bi bi-trash3-fill"
+                                style="font-size: 1rem"></i>
+                        </abbr>
+                    </button>
+
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</div>
