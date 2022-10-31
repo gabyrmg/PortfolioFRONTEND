@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true //URL : 'https://grmgportfolio.herokuapp.com/'\n\n};","map":null,"metadata":{},"sourceType":"module"}

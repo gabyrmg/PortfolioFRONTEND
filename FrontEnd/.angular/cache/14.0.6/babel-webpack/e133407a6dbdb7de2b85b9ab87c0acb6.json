@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Hardyskill {\n  constructor(nombreH, porcentaje) {\n    this.nombreH = nombreH;\n    this.porcentaje = porcentaje;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

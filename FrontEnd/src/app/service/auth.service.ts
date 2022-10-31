@@ -10,8 +10,10 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = environment.URL + 'auth/';
+  //URL = environment.URL + 'auth/';
   //URL : 'http://localhost:8080/auth/'
+  URL : 'https://grmgportfolio.herokuapp.com/auth/'
+  
 
   constructor(private httpClient: HttpClient) { }
 
