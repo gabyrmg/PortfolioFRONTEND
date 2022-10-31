@@ -8,9 +8,9 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class SEducacionService {
-  //URL = environment.URL + 'edu/' ;
+ URL = environment.URL + 'edu/' ;
  //  URL : 'http://localhost:8080/edu/'
-  URL : 'https://grmgportfolio.herokuapp.com/edu/'
+   //URL : 'https://grmgportfolio.herokuapp.com/edu/'
 
   constructor(private httpClient: HttpClient) { }
 
