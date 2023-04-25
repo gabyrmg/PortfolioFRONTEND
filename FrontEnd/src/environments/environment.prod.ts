@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  URL : 'https://grmgportfolio.herokuapp.com/'
+  URL : 'https://backendgrmg.onrender.com/'
 };
