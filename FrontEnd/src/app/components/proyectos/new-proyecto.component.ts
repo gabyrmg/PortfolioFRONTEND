@@ -9,6 +9,7 @@ import { SProyectosService } from 'src/app/service/s-proyectos.service';
   styleUrls: ['./new-proyecto.component.css']
 })
 export class NewProyectoComponent implements OnInit {
+  imgP: string = '';
   nombreP: string = '';
   descripcionP: string = '';
   linkP: string = '';
@@ -19,7 +20,7 @@ export class NewProyectoComponent implements OnInit {
   }
 
   onCreate(): void {
-    const proyecto = new Proyectos(this.nombreP, this.descripcionP, this.linkP);
+    const proyecto = new Proyectos(this.imgP, this.nombreP, this.descripcionP, this.linkP);
     this.sProyectos.save(proyecto).subscribe(data => {
       alert("Proyecto  añadido");
       this.router.navigate(['']);

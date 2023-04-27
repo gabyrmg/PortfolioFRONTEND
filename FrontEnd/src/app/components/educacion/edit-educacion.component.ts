@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
 import { SEducacionService } from 'src/app/service/s-educacion.service';
+//import { ImageService } from 'src/app/service/image.service';
 
 @Component({
   selector: 'app-edit-educacion',
@@ -32,6 +33,18 @@ export class EditEducacionComponent implements OnInit {
       alert("Error al modificar educación");
       this.router.navigate(['']);
     })
+    
+
   }
+
+  /** 
+  uploadImage($event: any) {
+   
+    const id= this.activedRouter.snapshot.params['id'];
+    const name = "educacion_" + id ;
+    this.imageServiceE.uploadImage($event, name)
+      
+    }
+ */
 
 }

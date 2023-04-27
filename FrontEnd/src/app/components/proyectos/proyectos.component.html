@@ -12,10 +12,13 @@
         <tbody>
             <tr *ngFor="let Proyectos of proyecto">
                 <td>
+                    <img src={{Proyectos.imgP}} width="100px" height="100px" >
+                </td>
+                <td>
                     <h4>{{Proyectos.nombreP}}</h4>
                 </td>
                 <td>{{Proyectos.descripcionP}}</td>
-                <td>{{Proyectos.linkP}}</td>
+                <td><a href="{{Proyectos.linkP}}"> {{Proyectos.linkP}}</a></td>
 
                 <td *ngIf="isLogged">
                     <button class="btn btn-light rounded-circle mx-1" routerLink="/editproyecto/{{Proyectos.id}}">

@@ -7,11 +7,36 @@
                     <input type="text" class="form-control" id="nombreEd" name="nombreEd" [(ngModel)]="edu.nombreEd"
                         required>
                 </div>
+                <br>
+
                 <div class="form-group">
                     <label for="descripcionEd">Descripcion de la formación educativa</label>
                     <input type="text" class="form-control" id="descripcionEd" name="descripcionEd"
                         [(ngModel)]="edu.descripcionEd" required>
                 </div>
+                <br>
+<!--               
+                <div class="form-group">
+                    <label for="imgE">Imagen formato .jpg/.jpeg/.png</label>
+                    <input type="file" class="form-control" id="imgE" name="imgE" [(ngModel)]="edu.imgEd"   
+                    (change)="uploadImage($event) " accept=".jpg, .jpeg, .png">
+                </div>
+                <br>
+
+               <div class="imagen">
+                    <img [src]="edu.imgEd" width="200px" >
+
+                </div>
+                <br> -->
+
+                <div class="form-group">
+                    <label for="imagenEd">Ingrese la URL de la imagen</label>
+                    <input type="text" class="form-control" id="imagenEd" name="imagenEd"
+                        [(ngModel)]="edu.imgEd" required>
+                </div>
+                <br>
+
+           
                 <button class="btn btn-primary">Actualizar educación</button>
 
             </form>

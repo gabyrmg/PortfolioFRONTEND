@@ -13,6 +13,11 @@
     <table class="table">
         <tbody>
             <tr *ngFor="let Educacion of edu">
+                <!-- agrego bloque para imagen-->
+                <td>
+                    <img id="imagen_tabla" src={{Educacion.imgEd}} width="100px" height="100px" >
+                </td>
+                <!---->
                 <td>
                     <h4>{{Educacion.nombreEd}}</h4>
                 </td>

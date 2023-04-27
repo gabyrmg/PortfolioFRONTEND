@@ -28,6 +28,9 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
 import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
 import { EditHeaderComponent } from './components/header/edit-header/edit-header.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -64,7 +67,9 @@ import { EditHeaderComponent } from './components/header/edit-header/edit-header
     HttpClientModule,
     ReactiveFormsModule,  /*agregdo  para formularios */
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider
